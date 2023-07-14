@@ -87,8 +87,3 @@
     background-color: rgb(221, 221, 221);
     border: none;
 }
-
-.key:active {
-    background-color: white;
-    border: solid rgb(236, 236, 236) 2px;
-}
