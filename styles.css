@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    width: 30vw;
+    background-color: rgb(230, 67, 67);
+    height: 80vh;
+    border-radius: 15px;
+    border: solid black 3px;
+}
+
+.cal-background {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.display {
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    border: solid rgb(236, 236, 236) 2px;
+    border-radius: 5px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.deletions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.deletion {
+    margin: 10px 0;
+    width: 48%;
+    font-size: 20px;
+    height: 3em;
+    background-color: white;
+    border: solid rgb(236, 236, 236) 2px;
+    transition: background-color 0.1s;
+}
+
+.deletion:hover {
+    background-color: rgb(221, 221, 221);
+    border: none;
+}
+
+.deletion:active {
+    background-color: white;
+    border: solid rgb(236, 236, 236) 2px;
+}
+
+.delete {
+    border-radius: 0 10px 10px 0;
+}
+
+.clear {
+    border-radius: 10px 0 0 10px;
+}
+
+.num-pad {
+    flex: 1;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.key {
+    background-color: white;
+    border: solid rgb(236, 236, 236) 2px;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+.key:hover {
+    background-color: rgb(221, 221, 221);
+    border: none;
+}
+
+.key:active {
+    background-color: white;
+    border: solid rgb(236, 236, 236) 2px;
+}
